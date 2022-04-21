@@ -1,5 +1,5 @@
 {
-    "name": "@fr0stf0x/eslint-plugin-absolute-imports",
+    "name": "eslint-plugin-absolute-imports-only",
     "version": "1.0.0",
     "main": "index.js",
     "dependencies": {},
