@@ -1,18 +1,18 @@
 {
-    "name": "eslint-plugin-absolute-imports",
-    "version": "0.0.2",
+    "name": "@fr0stf0x/eslint-plugin-absolute-imports",
+    "version": "1.0.0",
     "main": "index.js",
     "dependencies": {},
     "description": "Eslint rule enforcing absolute imports",
     "license": "MIT",
     "author": {
-        "email": "hello@jeff.yt",
-        "name": "Jeff Chen",
-        "url": "https://www.jeffchen.dev"
+        "email": "dontsmiletome@gmail.com",
+        "name": "Thao Tang",
+        "url": "https://fr0stf0x.vercel.app"
     },
     "categories": ["Linters"],
     "repository": {
-        "url": "https://www.github.com/jchen1/eslint-plugin-absolute-imports"
+        "url": "https://www.github.com/fr0stf0x/eslint-plugin-absolute-imports"
     },
-    "keywords": ["eslint", "imports", "eslint-plugin"]
+    "keywords": ["eslint", "imports", "eslint-plugin", "absolute-imports"]
 }
