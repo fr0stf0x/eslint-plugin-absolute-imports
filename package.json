@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-absolute-imports-only",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "index.js",
     "dependencies": {},
     "description": "Eslint rule enforcing absolute imports",

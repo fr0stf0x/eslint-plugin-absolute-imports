@@ -5,6 +5,7 @@ const path = require("path");
 
 const HAS_EXT_REGEX = /\.[a-z]+$/;
 const JS_EXT_REGEX = /\.(ts|tsx|js|jsx|json)$/;
+const PLUGIN_NAME = "absolute-imports-only";
 
 function has(map, path) {
   let inner = map;
@@ -88,10 +89,10 @@ module.exports.rules = {
       // Merge settings
       let mergedSettings = defaultSettings;
 
-      if (settings['absolute-imports']) {
+      if (settings[PLUGIN_NAME]) {
         mergedSettings = {
           ...defaultSettings,
-          ...settings['absolute-imports'],
+          ...settings[PLUGIN_NAME],
         }
       }
 

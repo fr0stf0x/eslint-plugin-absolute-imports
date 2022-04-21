@@ -1,4 +1,4 @@
-# eslint-plugin-absolute-imports
+# eslint-plugin-absolute-imports-only
 
 ## Forked from [eslint-plugin-absolute-imports](https://github.com/jchen1/eslint-plugin-absolute-imports)
 
@@ -15,7 +15,7 @@ Example:
 ```
 ...
 settings: {
-  "absolute-imports": {
+  "absolute-imports-only": {
     project: path.resolve(__dirname, 'tsconfig.json'),
   },
 },
@@ -23,9 +23,18 @@ settings: {
 
 ## Setup
 
-- `npm i --save-dev eslint-plugin-absolute-imports`
-- Add `eslint-plugin-absolute-imports` to your eslint `plugins` section
-- Add `absolute-imports/only-absolute-imports` to your eslint `rules` section
+### npm
+
+`npm i --save-dev eslint-plugin-absolute-imports-only`
+
+### yarn
+
+`yarn add -D eslint-plugin-absolute-imports-only`
+
+### .eslintrc
+
+- Add `eslint-plugin-absolute-imports-only` to your eslint `plugins` section
+- Add `absolute-imports-only/only-absolute-imports` to your eslint `rules` section
 
 ## Options
 
