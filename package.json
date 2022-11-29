@@ -2,7 +2,9 @@
     "name": "eslint-plugin-absolute-imports-only",
     "version": "1.0.1",
     "main": "index.js",
-    "dependencies": {},
+    "dependencies": {
+        "jsonc-parser": "^3.2.0"
+    },
     "description": "Eslint rule enforcing absolute imports",
     "license": "MIT",
     "author": {
@@ -10,9 +12,16 @@
         "name": "Thao Tang",
         "url": "https://fr0stf0x.vercel.app"
     },
-    "categories": ["Linters"],
+    "categories": [
+        "Linters"
+    ],
     "repository": {
         "url": "https://www.github.com/fr0stf0x/eslint-plugin-absolute-imports"
     },
-    "keywords": ["eslint", "imports", "eslint-plugin", "absolute-imports"]
+    "keywords": [
+        "eslint",
+        "imports",
+        "eslint-plugin",
+        "absolute-imports"
+    ]
 }
