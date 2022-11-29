@@ -2,6 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const parser = require("jsonc-parser");
 
 const HAS_EXT_REGEX = /\.[a-z]+$/;
 const JS_EXT_REGEX = /\.(ts|tsx|js|jsx|json)$/;
@@ -51,14 +52,14 @@ function getBaseUrl(baseDir) {
   let url = "";
 
   if (fs.existsSync(path.join(baseDir, "tsconfig.json"))) {
-    const tsconfig = JSON.parse(
-      fs.readFileSync(path.join(baseDir, "tsconfig.json"))
+    const tsconfig = parser.parse(
+      fs.readFileSync(path.join(baseDir, "tsconfig.json")).toString()
     );
     if (has(tsconfig, "compilerOptions.baseUrl")) {
       url = tsconfig.compilerOptions.baseUrl;
     }
   } else if (fs.existsSync(path.join(baseDir, "jsconfig.json"))) {
-    const jsconfig = JSON.parse(
+    const jsconfig = parser.parse(
       fs.readFileSync(path.join(baseDir, "jsconfig.json"))
     );
     if (has(jsconfig, "compilerOptions.baseUrl")) {
